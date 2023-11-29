@@ -1,19 +1,31 @@
-import logo from './logo.svg';
+
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import './App.css';
+
+import HomePage from './HomePage';
+import AboutUs from './AboutUs';
+import NotFound from './NotFound';
+import InputForm from "../Components/InputForm";
 
 function Routing() {
   return (
-    <>
+    <div className="App">
+        <h1>Welcome to my world</h1>
+        <br/>
+        <br/>
       <BrowserRouter>
         <Routes>
-          <Route path ="/" element={<Home/>}/>
+          <Route path ="/" element={<HomePage/>}/>
           <Route path ="/about-us" element={<AboutUs/>}/>
-          <Route path ="/test" element={<Test/>}/>
-          <Route path ="*" element={<Error/>}/>
+          <Route path ="*" element={<NotFound/>}/>
         </Routes>
-      </BrowserRouter>
-    </>
+        </BrowserRouter>
+        <br/>
+        <br/>
+        <InputForm/>
+      <br/>
+      <br/>
+      <h3>QA Limited London</h3>
+    </div>
   );
 }
 
