@@ -12,7 +12,7 @@ function InputForm(){
         setResult(R)
     }
         return(
-            <>
+            <div className="container">
             First number:<input type="text" id="t1"/> <br/>
             <br/>
             Second number:<input type="text" id="t2"/> <br/>
@@ -21,7 +21,7 @@ function InputForm(){
             <button type="button" onClick={ ()=> add()}>Calculate</button><br/>
             <br/>
             <h1> Result={result} </h1>
-            </>
+            </div>
         )
     
 }

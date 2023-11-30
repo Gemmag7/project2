@@ -1,0 +1,49 @@
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: center;
+    margin-right: 2rem;
+    height: 90px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .nav-links {
+     color: #ff1493;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+  }
+  
+  .nav-links a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #ff1493;
+  }
+  .nav-links:hover {
+    
+    background-color: #fb8ccf;
+    color: #ff1493;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  
+  ul{
+    text-decoration-style: none;
+  }
+  
+  
+  
